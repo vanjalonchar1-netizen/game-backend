@@ -30,11 +30,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running on port ${port}`);
 });
-
-Commit the file.
-
-4. Add .gitignore
-Create a file named .gitignore:
-
-node_modules
-.env
