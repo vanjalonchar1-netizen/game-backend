@@ -11,6 +11,9 @@ const pool = new Pool({
 
 app.use(cors());
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("Game backend is online");
+});
 
 app.get("/health", async (req, res) => {
   try {
